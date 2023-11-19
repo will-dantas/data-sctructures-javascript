@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "dependencies": {
+    "npm-cli": "^0.1.0"
+  }
+}

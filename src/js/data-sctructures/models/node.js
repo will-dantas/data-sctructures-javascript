@@ -3,4 +3,4 @@ export class Node {
     this.element = element;
     this.next = undefined;
   }
-}
+} 

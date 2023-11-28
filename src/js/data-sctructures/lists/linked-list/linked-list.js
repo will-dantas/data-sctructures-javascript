@@ -1,5 +1,5 @@
-import { Node } from "../models/node.js";
-import { defaulEquals } from "../utils/default-equals.js";
+import { Node } from "../../models/node.js";
+import { defaulEquals } from "../../utils/default-equals.js";
 
 export class LinkedList {
   constructor(equalsFn = defaulEquals) {

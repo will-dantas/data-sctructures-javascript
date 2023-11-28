@@ -1,6 +1,6 @@
-import { DoublyNode } from "../models/doubly-node.js";
+import { DoublyNode } from "../../models/doubly-node.js";
 import { LinkedList } from "../linked-list/linked-list.js";
-import { defaulEquals } from "../utils/default-equals.js";
+import { defaulEquals } from "../../utils/default-equals.js";
 
 export class DoublyLinkedList extends LinkedList {
   constructor(equalsFn = defaulEquals) {
@@ -73,12 +73,3 @@ export class DoublyLinkedList extends LinkedList {
     return undefined;
   }
 }
-
-const doublyList = new DoublyLinkedList();
-
-doublyList.insert(1, 0);
-doublyList.insert(2, 1);
-doublyList.insert(3, 2);
-console.log(doublyList.toString());
-doublyList.removeAt(1);
-console.log(doublyList.toString());

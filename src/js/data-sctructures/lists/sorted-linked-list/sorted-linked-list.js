@@ -1,5 +1,5 @@
-import { LinkedList } from "../lists/linked-list/linked-list.js";
-import { defaulEquals } from "../utils/default-equals.js";
+import { LinkedList } from "../linked-list/linked-list.js";
+import { defaulEquals } from "../../utils/default-equals.js";
 
 const Compare = {
   LESS_THAN: -1,
@@ -36,7 +36,6 @@ export class SortedLinkedList extends LinkedList {
   getIndexNextSortedElement (element) {
     let current = this.head;
     let i = 0;
-    console.log('current =========>', current);
 
     for (; i < this.size() && current; i++) {
       const comp = this.compareFn(element, current.element);

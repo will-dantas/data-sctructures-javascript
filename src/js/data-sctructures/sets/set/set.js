@@ -66,4 +66,34 @@ export class Set {
     
     return intersectionSet;
   }
+
+  diffrence (otherSet) {
+    const diffrenceSet = new Set();
+    this.values().forEach((value) => {
+      if (!otherSet.has(value)) {
+        diffrenceSet.add(value);
+      }
+    });
+
+    return diffrenceSet;
+  }
+
+  isSubsetOf (otherSet) {
+    if (this.size() > otherSet.size()) {
+      return false;
+    }
+
+    let isSubsetOf = true;
+
+    this.values().every((value) => {
+      if (!otherSet.has(value)) {
+        isSubsetOf = false;
+        return false;
+      }
+      
+      return true;
+    });
+
+    return isSubsetOf;
+  }
 }

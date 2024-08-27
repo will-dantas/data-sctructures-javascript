@@ -35,8 +35,26 @@ setB.add(6);
 
 const unionAB = setA.union(setB);
 
+console.log('a: ', setA.values());
+
+console.log('b: ', setB.values());
+
 console.log('union: ', unionAB.values());
 
 const intersectionAB = setA.intersection(setB);
 
 console.log('intersection: ', intersectionAB.values());
+
+const diffrenceAB = setA.diffrence(setB);
+
+console.log('diffrence: ', diffrenceAB.values());
+
+console.log('========================================');
+
+const setC = new Set();
+
+setC.add(2);
+setC.add(3);
+
+console.log('b subconjunto de a?', setB.isSubsetOf(setA));
+console.log('b subconjunto de c?: ', setB.isSubsetOf(setC));
